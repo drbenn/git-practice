@@ -22,3 +22,18 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+
+.box {
+  width: fit-content;
+  height: fit-content;
+  padding: 2rem;
+  border: 5px solid grey;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.rename {
+  background: linear-gradient(135deg, red,blue);
+}
