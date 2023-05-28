@@ -58,8 +58,23 @@
               <li>If encounter this uncommitted conflict, just use 'git stash' (short for git stash save)</li>
               <li>Then later use 'git stash pop' to reapply the stashed changes to your working copy...which CAN be a different branch</li>
             </ol>
+        </ul>
+      </p>
 
-
+      <p>
+        <h2>Rebasing  </h2>
+        <h3>Two main ways to use rebase</h3>
+        <ol>
+          <li>Alternate to merge</li>
+          <li>As a cleanup tool</li>
+          <li><span style="color:red">When not to rebase</span></li>
+        </ol>
+        <ul>
+          <li>Rebase adjusts the timeline and re-writes history.</li>
+          <li>Instead of parallel commits between two branches, if you rebased a feature branch onto main, the feature commits would all be added to extend the HEAD(at the tip) of the main branch</li>
+          <li>Instead of using a merge commit, rebasing rewrites history by creating new commits(after main HEAD) for each of the original feature branch commtis</li>
+          <li>'git switch feature' and 'git rebase main' - you switch to branch merging in and you rebase the featuree into main branch</li>
+          <li>End of Udemy course topic 142 has good visual</li>
 
         </ul>
       </p>
