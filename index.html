@@ -28,15 +28,16 @@
       </p>
     </div>
     <div>
+
       <p>
         <h2>For simple merge (feature branch with no addtl commits on master branch):</h2>
         <ol>
           <li>switch to branch receiving the feature branch, in this case, 'git switch main'</li>
           <li>merge feature branch INTO master branch, 'git merge feature1'... i did 'git merge renamed-branch'</li>
           <li>In the case for ex. branch 'SeachBar' was created with several commits, and after it was branched off 'main' branch added a few commits, however, updates to totally different files were complete in each branch, there will be no merge conflicts to validate, however, a merge comment will be necessary</li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aspernatur possimus culpa ipsam. Quasi facilis iure distinctio cum impedit! Assumenda, est eligendi adipisci officiis reprehenderit quidem vitae esse nulla a nam delectus enim iure ipsa sunt rerum soluta iste quis praesentium exercitationem! Rerum saepe maxime incidunt natus, aliquam error temporibus quis hic maiores cum odio? Illo nulla repellat esse, velit delectus, odio, consequatur sit consequuntur laboriosam deleniti soluta tenetur quis qui impedit quo quam corrupti fugit minima deserunt sunt veritatis iste! Exercitationem illo qui deleniti blanditiis, eius necessitatibus aspernatur dolore voluptas eaque ex quisquam dignissimos, magni ullam error quia tenetur?</li>
         </ol>
       </p>
+
       <h2>For Merge Conflicts:</h2>
       <ol>
         <li>Open files with merge conflicts</li>
@@ -47,6 +48,22 @@
       <ul>
         <li><strong>VSC can be used to select one branch or the other with clickable options to select which branches edits to accept in the merge</strong></li>
       </ul>
+
+      <p>
+        <h2>Git Stash - How to save uncommitted edits on new branch and then switch branch(bc cant switch branch bc uncommitted!)</h2>
+        <ul>
+          <li>If there are NO conflicts between moving branches, the uncommitted work will follow you to the switched to branch</li>
+          <li>if there ARE conflicts, you will need to delete changes or you can stash</li>
+            <ol>
+              <li>If encounter this uncommitted conflict, just use 'git stash' (short for git stash save)</li>
+              <li>Then later use 'git stash pop' to reapply the stashed changes to your working copy...which CAN be a different branch</li>
+            </ol>
+
+
+
+        </ul>
+      </p>
+
     </div>
 
     <div class="box rename">Rename</div>
